@@ -1,2 +1,8 @@
 /target
+/tests
+/src
+.gitignore
+LICENSE
+README.md
 Cargo.lock
+Cargo.toml
