@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["owsql"] = [{"text":"impl !Freeze for Connection","synthetic":true,"types":[]},{"text":"impl Freeze for Row","synthetic":true,"types":[]},{"text":"impl Freeze for OwsqlError","synthetic":true,"types":[]},{"text":"impl Freeze for OwsqlErrorLevel","synthetic":true,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

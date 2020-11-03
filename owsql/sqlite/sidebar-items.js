@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["open","Open a read-write connection to a new or existing database."],["open_readonly","Open a readonly connection to a new or existing database."],["version","Return the version number of SQLite."]]});

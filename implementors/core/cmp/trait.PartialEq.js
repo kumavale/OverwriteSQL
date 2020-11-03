@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["owsql"] = [{"text":"impl PartialEq&lt;Connection&gt; for Connection","synthetic":false,"types":[]},{"text":"impl PartialEq&lt;OwsqlError&gt; for OwsqlError","synthetic":false,"types":[]},{"text":"impl PartialEq&lt;OwsqlErrorLevel&gt; for OwsqlErrorLevel","synthetic":false,"types":[]},{"text":"impl PartialEq&lt;Row&gt; for Row","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

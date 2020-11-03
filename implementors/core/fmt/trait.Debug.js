@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["owsql"] = [{"text":"impl Debug for Connection","synthetic":false,"types":[]},{"text":"impl Debug for OwsqlError","synthetic":false,"types":[]},{"text":"impl Debug for OwsqlErrorLevel","synthetic":false,"types":[]},{"text":"impl Debug for Row","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

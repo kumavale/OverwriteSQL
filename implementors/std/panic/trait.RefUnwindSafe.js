@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["owsql"] = [{"text":"impl !RefUnwindSafe for Connection","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for Row","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for OwsqlError","synthetic":true,"types":[]},{"text":"impl RefUnwindSafe for OwsqlErrorLevel","synthetic":true,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

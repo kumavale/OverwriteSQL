@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["open","Open a read-write connection to a new or existing database."]]});

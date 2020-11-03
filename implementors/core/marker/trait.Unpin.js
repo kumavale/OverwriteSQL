@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["owsql"] = [{"text":"impl Unpin for Connection","synthetic":true,"types":[]},{"text":"impl Unpin for Row","synthetic":true,"types":[]},{"text":"impl Unpin for OwsqlError","synthetic":true,"types":[]},{"text":"impl Unpin for OwsqlErrorLevel","synthetic":true,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
