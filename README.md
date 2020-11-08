@@ -1,5 +1,6 @@
 # OverwriteSQL
 
+![Deprecated](https://img.shields.io/badge/Deprecated-critical.svg?style=flat)
 [![Actions Status](https://github.com/kumavale/OverwriteSQL/workflows/CI/badge.svg)](https://github.com/kumavale/OverwriteSQL/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Documentation](https://img.shields.io/badge/docs-0.1.0-5378aa.svg?style=flat)](https://kumavale.github.io/OverwriteSQL/owsql/index.html)
@@ -53,7 +54,7 @@ assert!(conn.rows(&sql).is_err());
 ```rust
 let conn = owsql::sqlite::open(":memory:").unwrap();
 let age = String::from("50 or 1=1; --");
-let sql = "SELECT name FROM users WHEREage < " + &age;
+let sql = "SELECT name FROM users WHERE age < " + &age;
 assert_eq!(conn.actual_sql(&sql).unwrap(), "'SELECT name FROM users WHERE age < 50 or 1=1; --' ");
 assert!(conn.rows(&sql).is_err());
 ```
