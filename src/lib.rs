@@ -1,5 +1,3 @@
-#![deprecated]
-
 //! # OverwriteSQL
 //! `owsql` is a secure library for PostgreSQL, MySQL and SQLite.  
 //! Unlike other libraries, you can use string concatenation to prevent SQL injection.  

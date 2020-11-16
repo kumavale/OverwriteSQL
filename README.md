@@ -6,7 +6,7 @@
 [![Documentation](https://img.shields.io/badge/docs-0.1.0-5378aa.svg?style=flat)](https://kumavale.github.io/OverwriteSQL/owsql/index.html)
   
 
-OverwriteSQL(`owsql`) is a secure SQL database library I'm currently developing as project for my graduation work.  
+OverwriteSQL(`owsql`) is a secure SQL database library ~~I'm currently developing as project for my graduation work~~.  
 You can use string concatenation to prevent SQL injection.  
 
 Supported databases:
@@ -49,17 +49,17 @@ assert_eq!(conn.actual_sql(&sql).unwrap(), "SELECT name FROM users WHERE age < '
 assert!(conn.rows(&sql).is_err());
 ```
 
-### If you did not use the conn.ow() method
+### If you did not use the `conn.ow()` method
 
 ```rust
 let conn = owsql::sqlite::open(":memory:").unwrap();
 let age = String::from("50 or 1=1; --");
-let sql = "SELECT name FROM users WHERE age < " + &age;
+let sql = "SELECT name FROM users WHERE age < ".to_string() + &age;
 assert_eq!(conn.actual_sql(&sql).unwrap(), "'SELECT name FROM users WHERE age < 50 or 1=1; --' ");
 assert!(conn.rows(&sql).is_err());
 ```
 
-### conn.ow(\<String\>)
+### When using `conn.ow(<String>)`
 
 >> ```rust
 >> pub fn ow<T: ?Sized + std::string::ToString>(&self, s: &'static T) -> String;
